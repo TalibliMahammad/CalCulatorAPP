@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.date {
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.calbox {
+    background-color: rgb(3, 3, 3);
+    padding-top: 100px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.operator {
+    background-color: rgb(241, 145, 1);
+    color: white;
+}
+
+.num,
+#dot {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+#zero {
+    color: rgb(255, 253, 253);
+    border-radius: 50px;
+    width: 180px;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#ope {
+    background-color: gray;
+}
+
+.inp {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-style: none;
+    text-align: right;
+    flex-wrap: wrap;
+    background: transparent;
+    color: white;
+    font-size: 60px;
+    outline: none;
+
+}
+
+button {
+    border: none;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+    .operator {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .num,
+    #dot {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+    #zero {
+        width: 140px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .inp {
+        height: 80px;
+        width: 70%;
+        font-size: 40px;
+    }
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .calbox {
+        width: 90%;
+        padding-top: 80px;
+    }
+
+}
